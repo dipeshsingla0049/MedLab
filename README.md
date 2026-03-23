@@ -29,7 +29,7 @@ During medical emergencies, people waste precious time calling hospitals one by 
 **Indian Hospitals & Diagnostics Centers** via RapidAPI
  
 ```
-GET https://indian-hospitals-diagnostics-centers.p.rapidapi.com/hospitals/all
+GET https://69c16e00085e1a9fae410108.mockapi.io/api/v1/Hospitals
 ```
  
 The API provides real hospital names, cities, and contact details across India.
