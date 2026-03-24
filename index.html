@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedLab — Find Hospital Beds Instantly</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                <span>MedLab</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link" id="nav-home">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    Home                    
+                </a>
+                <a href="about.html" class="nav-link" id="nav-about">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6m0 4h.01"/></svg>
+                    About
+                </a>
+                <a href="beds.html" class="nav-link" id="nav-beds">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
+                    Find Beds
+                </a>
+                <a href="favorites.html" class="nav-link" id="nav-favorites">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                    Favorites
+                </a>
+            </div>
+                <a href="beds.html?filter=icu" class="emergency-nav" id="nav-emergency">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18v-6a5 5 0 1 1 10 0v6"/><path d="M5 21a1 1 0 0 1-1-1v-1a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1z"/><path d="M12 7V2"/><path d="m3.5 12.5-1-1"/><path d="m20.5 12.5 1-1"/></svg>
+                    <span class="emergency-text">Emergency ICU</span>
+                </a>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-inner">
+                <h1 class="hero-heading">
+                    Find Available Hospital Beds Instantly
+                </h1>
+                <p class="hero-subtitle">Search real-time bed availability across top Indian hospitals. Fast. Free. Reliable.</p>
+                <div class="hero-searchbar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input id="hero-search" type="text" placeholder="Search by hospital name or disease..." />
+                    <button id="btn-hero-search" class="btn-search">Find Beds</button>
+                </div>
+                <div class="hero-actions">
+                    <a href="beds.html" class="btn-find-beds">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
+                    Find Beds
+                    </a>
+                    <a href="beds.html?bedType=ICU%20Only" class="btn-emergency-hero">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 12a5 5 0 0 1 5-5v0a5 5 0 0 1 5 5v6H7v-6Z"/><path d="M12 2v3"/><path d="m20 5-2.14 2.14"/><path d="m4 5 2.14 2.14"/><path d="M15 22H9"/></svg>
+                    Find ICU Bed Now
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="feature-section">
+            <div class="feature-inner">
+                <h2 class="reveal">Why Chose MedLab?</h2>
+                <p class="reveal">Real-time hospital bed tracking that saves lives</p>
+                <div class="features-grid">
+                    <div class="feature-card" style="transition-delay: 0ms">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.48 12H2"/></svg>
+                        </div>
+                        <h3>Real-Time Availability</h3>
+                        <p>Live bed counts updated instantly across all listed hospitals</p>
+                    </div>
+                    <div class="feature-card" style="transition-delay: 80ms">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 12a5 5 0 0 1 5-5v0a5 5 0 0 1 5 5v6H7v-6Z"/><path d="M12 2v3"/><path d="m20 5-2.14 2.14"/><path d="m4 5 2.14 2.14"/><path d="M15 22H9"/></svg>
+                        </div>
+                        <h3>Emergency ICU Access</h3>
+                        <p>Find critical care beds in one click during emergencies</p>
+                    </div>
+                    <div class="feature-card" style="transition-delay: 160ms">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+                        </div>
+                        <h3>Smart Search & Filter</h3>
+                        <p>Filter by city, disease, price category and bed type</p>
+                    </div>
+                    <div class="feature-card" style="transition-delay: 240ms">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <h3>Pan-India Coverage</h3>
+                        <p>Hospitals across 20+ major cities in India</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.48 12H2"/></svg>
+                    <span>MedLab</span>
+                    </div>
+                    <p class="footer-desc">Connecting patients to care, instantly across India.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                    <a href="about.html" class="footer-link">About</a>
+                    <a href="beds.html" class="footer-link">Find Beds</a>
+                    <a href="beds.html?filter=icu" class="footer-link">Emergency</a>
+                    <a href="favorites.html" class="footer-link">Favorites</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Data Source</h4>
+                    <p class="footer-source">Data sourced from verified Indian hospitals and government databases.</p>
+                </div>
+                </div>
+                <div class="footer-bottom">
+                <p>© 2026 MedLab India. All rights reserved.</p>
+            </div>
+        </footer>
+ 
+</div>
+</body>
+</html>
