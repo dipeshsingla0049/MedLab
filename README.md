@@ -1,5 +1,7 @@
 # 🏥 MedLab
- 
+
+🌐 **Live Demo:** [https://med-lab-two.vercel.app](https://med-lab-two.vercel.app)
+
 ## 📌 Overview
  
 **MedLab** is a real-time hospital bed availability web application built with plain HTML, CSS, and JavaScript — no frameworks, no libraries. It fetches live hospital data from a public API and presents it in a clean, filterable dashboard — helping patients and families make faster decisions during medical emergencies.
